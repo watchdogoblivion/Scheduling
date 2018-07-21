@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Create_Course_Activity"
+    tools:showIn="@layout/activity_create__course_">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+<!-- first row-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pop">
+
+            <TextView
+                android:id="@+id/courseViewC"
+                android:layout_width="115dp"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:text="@string/course"
+                android:textSize="22sp"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/editTitleC"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/name"
+                android:layout_toEndOf="@+id/courseViewC"/>
+
+        </RelativeLayout>
+
+<!-- second row-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/startDateViewC"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/start_date"
+                android:textSize="22sp"
+                />
+
+            <EditText
+                android:id="@+id/startMonthC"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/mm"
+                android:layout_toEndOf="@+id/startDateViewC"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/startDayC"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/dd"
+                android:layout_toEndOf="@+id/startMonthC"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/startYearC"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/yyyy"
+                android:layout_toEndOf="@+id/startDayC"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+
+<!-- third row-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/endDateC"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/end_date"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/endMonthC"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/mm"
+                android:layout_toEndOf="@+id/endDateC"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/endDayC"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/dd"
+                android:layout_toEndOf="@+id/endMonthC"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/endYearC"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/yyyy"
+                android:layout_toEndOf="@+id/endDayC"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+
+<!-- fourth row-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="115dp"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:text="@string/status"
+                android:textSize="22sp"
+                android:layout_marginEnd="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="215dp"
+                android:layout_height="41dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_toEndOf="@+id/status"/>
+
+        </RelativeLayout>
+
+<!-- fifth row-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/alert"
+                android:layout_width="115dp"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:text="@string/alert"
+                android:textSize="22sp"
+                android:layout_marginEnd="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerAlert"
+                android:layout_width="215dp"
+                android:layout_height="41dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_toEndOf="@+id/alert"/>
+
+        </RelativeLayout>
+
+<!-- sixth row-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/mentorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/mentor_name"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/editMentor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/name"
+                android:layout_toEndOf="@+id/mentorName"/>
+
+        </RelativeLayout>
+
+
+<!-- seventh row-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/mentorEmailEditor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="@string/email_address"
+                android:layout_toEndOf="@+id/mentorEmail"/>
+
+            <TextView
+                android:id="@+id/mentorEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/mentor_email"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+ <!-- eighth row-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/mentorPhoneEditor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="@string/defaultNumber"
+                android:layout_toEndOf="@+id/mentorPhoneNumber"/>
+
+            <TextView
+                android:id="@+id/mentorPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/mentor_phoneNumber"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"/>
+
+        </RelativeLayout>
+
+<!-- ninth row-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/descriptionEditor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="10dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="@string/n_a"
+                android:gravity="start"/>
+
+            <TextView
+                android:id="@+id/descriptionView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/course_description"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

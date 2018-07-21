@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Term_Details_Activity"
+    tools:showIn="@layout/activity_term__details_"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/term"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/startDateText2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/start_date"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/endDateText2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/end_date"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/coursesListView"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="157dp" />
+
+
+</RelativeLayout>

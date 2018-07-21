@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Edit_Course_Activity"
+    tools:showIn="@layout/activity_edit__course_">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <!-- first row-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/courseViewC3"
+                    android:layout_width="115dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/course"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/editTitleC3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/name"
+                    android:layout_toEndOf="@+id/courseViewC3"/>
+
+            </RelativeLayout>
+
+            <!-- second row-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/startDateViewC3"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/start_date"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/startMonthC3"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:text="@string/mm"
+                    android:layout_toEndOf="@+id/startDateViewC3"
+                    android:layout_marginStart="10dp"/>
+
+                <EditText
+                    android:id="@+id/startDayC3"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:text="@string/dd"
+                    android:layout_toEndOf="@+id/startMonthC3"
+                    android:layout_marginStart="10dp"/>
+
+                <EditText
+                    android:id="@+id/startYearC3"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:text="@string/yyyy"
+                    android:layout_toEndOf="@+id/startDayC3"
+                    android:layout_marginStart="10dp"/>
+
+            </RelativeLayout>
+
+            <!-- third row-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/endDateC3"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/end_date"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/endMonthC3"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:text="@string/mm"
+                    android:layout_toEndOf="@+id/endDateC3"
+                    android:layout_marginStart="10dp"/>
+
+                <EditText
+                    android:id="@+id/endDayC3"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:text="@string/dd"
+                    android:layout_toEndOf="@+id/endMonthC3"
+                    android:layout_marginStart="10dp"/>
+
+                <EditText
+                    android:id="@+id/endYearC3"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:text="@string/yyyy"
+                    android:layout_toEndOf="@+id/endDayC3"
+                    android:layout_marginStart="10dp"/>
+
+            </RelativeLayout>
+
+            <!-- fourth row-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/status3"
+                    android:layout_width="115dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/status"
+                    android:textSize="22sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="215dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"
+                    android:layout_toEndOf="@+id/status3"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/alert2"
+                    android:layout_width="115dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/alert"
+                    android:textSize="22sp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerAlert2"
+                    android:layout_width="215dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"
+                    android:layout_toEndOf="@+id/alert2"/>
+
+            </RelativeLayout>
+
+            <!-- fifth row-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/mentorName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/mentor_name"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editMentor3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/name"
+                    android:layout_toEndOf="@+id/mentorName3"/>
+
+            </RelativeLayout>
+
+            <!-- sixth row-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/mentorEmailEditor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:text="@string/email_address"
+                    android:layout_toEndOf="@+id/mentorEmail3"/>
+
+                <TextView
+                    android:id="@+id/mentorEmail3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/mentor_email"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <!-- seventh row-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/mentorPhoneEditor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:text="@string/defaultNumber"
+                    android:layout_toEndOf="@+id/mentorPhoneNumber3"/>
+
+                <TextView
+                    android:id="@+id/mentorPhoneNumber3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/mentor_phoneNumber"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <!-- eighth row-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/descriptionEditor3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:text="@string/n_a"
+                    android:gravity="start"/>
+
+                <TextView
+                    android:id="@+id/descriptionView3"
+                    android:layout_width="200dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/course_description"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</ScrollView>

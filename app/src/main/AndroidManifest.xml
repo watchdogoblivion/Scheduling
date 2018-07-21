@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sj_sc.scheduling"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".Provider"
+            android:authorities="com.example.sj_sc.scheduling"
+            android:exported="false" />
+
+        <activity
+            android:name=".Terms_Activity"
+            android:label="Terms"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Create_Terms_Activity"
+            android:label="Create"
+            android:parentActivityName=".Terms_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Terms_Activity" />
+        </activity>
+        <activity
+            android:name=".Term_Details_Activity"
+            android:label="Term"
+            android:parentActivityName=".Terms_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Terms_Activity" />
+        </activity>
+        <activity
+            android:name=".Add_Courses_Activity"
+            android:label="Add"
+            android:parentActivityName=".Term_Details_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Term_Details_Activity" />
+        </activity>
+        <activity
+            android:name=".Courses_Activity"
+            android:label="@string/courses"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Create_Course_Activity"
+            android:label="Create"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize"/>
+        <activity
+            android:name=".Edit_Term_Activity"
+            android:label="Edit"
+            android:parentActivityName=".Term_Details_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Term_Details_Activity" />
+        </activity>
+        <activity
+            android:name=".Course_Details_Activity"
+            android:label="Course"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize"/>
+        <activity
+            android:name=".Edit_Course_Activity"
+            android:label="Edit"
+            android:parentActivityName=".Course_Details_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Course_Details_Activity" />
+        </activity>
+        <activity
+            android:name=".Course_Notes_Activity"
+            android:label="@string/notes"
+            android:parentActivityName=".Course_Details_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Course_Details_Activity" />
+        </activity>
+        <activity
+            android:name=".Create_CourseNotes_Activity"
+            android:label="Create"
+            android:parentActivityName=".Course_Notes_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Course_Notes_Activity" />
+        </activity>
+        <activity
+            android:name=".Course_Notes_Details_Activity"
+            android:label="@string/note"
+            android:parentActivityName=".Course_Notes_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Course_Notes_Activity" />
+        </activity>
+        <activity
+            android:name=".Edit_CourseNote_Activity"
+            android:label="Edit"
+            android:parentActivityName=".Course_Notes_Details_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Course_Notes_Details_Activity" />
+        </activity>
+        <activity
+            android:name=".Assessment_Activity"
+            android:label="@string/assessments"
+            android:parentActivityName=".Course_Details_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Course_Details_Activity" />
+        </activity>
+        <activity
+            android:name=".Assessment_Details_Activity"
+            android:label="@string/assessment"
+            android:parentActivityName=".Assessment_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Assessment_Activity" />
+        </activity>
+        <activity
+            android:name=".Create_Assessments_Activity"
+            android:label="Create"
+            android:parentActivityName=".Assessment_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Assessment_Activity" />
+        </activity>
+        <activity
+            android:name=".Edit_Assessment_Activity"
+            android:label="Edit"
+            android:parentActivityName=".Assessment_Details_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges = "orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sj_sc.scheduling.Assessment_Details_Activity" />
+        </activity>
+    </application>
+
+</manifest>

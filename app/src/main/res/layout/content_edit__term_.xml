@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Edit_Term_Activity"
+    tools:showIn="@layout/activity_edit__term_">
+
+
+    <EditText
+        android:id="@+id/startMonthEdit"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewEdit"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/mm"
+        android:layout_toEndOf="@+id/textViewEdit"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/startDayEdit"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/startMonthEdit"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/dd"
+        android:layout_toEndOf="@+id/startMonthEdit"
+        android:layout_marginStart="10dp"/>
+
+
+    <EditText
+        android:id="@+id/startYearEdit"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/startMonthEdit"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/yyyy"
+        android:layout_toEndOf="@+id/startDayEdit"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewEdit"
+        android:layout_width="122dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="134dp"
+        android:text="@string/start_date"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/termViewTEdit"
+        android:layout_width="115dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewEdit"
+        android:layout_marginTop="31dp"
+        android:text="@string/term"
+        android:textSize="22sp"
+        />
+
+    <EditText
+        android:id="@+id/editTitleEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignStart="@+id/startMonthEdit"
+        android:layout_alignTop="@+id/termViewTEdit"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        android:layout_toEndOf="@+id/termViewTEdit"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/endDateEdit"
+        android:layout_width="117dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewEdit"
+        android:layout_marginTop="221dp"
+        android:text="@string/end_date"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/endMonthEdit"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/endDateEdit"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/mm"
+        android:layout_toEndOf="@+id/endDateEdit"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/endDayEdit"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/endDateEdit"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/dd"
+        android:layout_toEndOf="@+id/endMonthEdit"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/endYearEdit"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/endDateEdit"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/yyyy"
+        android:layout_toEndOf="@+id/endDayEdit"
+        android:layout_marginStart="10dp"/>
+
+</RelativeLayout>

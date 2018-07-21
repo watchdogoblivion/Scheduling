@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Edit_Assessment_Activity"
+    tools:showIn="@layout/activity_edit__assessment_">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner22"
+                android:layout_width="353dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/assessmentCodeEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/assessment_code" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/goalDateView2"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/goal_date"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/goalMonth2"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/mm"
+                android:layout_toEndOf="@+id/goalDateView2"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/goalDay2"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/dd"
+                android:layout_toEndOf="@+id/goalMonth2"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/goalYear2"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:text="@string/yyyy"
+                android:layout_toEndOf="@+id/goalDay2"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/alert3"
+                android:layout_width="115dp"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:text="@string/alert"
+                android:textSize="22sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerAlert4"
+                android:layout_width="279dp"
+                android:layout_height="41dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_toEndOf="@+id/alert3"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/status5"
+                android:layout_width="80dp"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:text="@string/status"
+                android:textSize="22sp"/>
+
+            <Spinner
+                android:id="@+id/spinner223"
+                android:layout_width="279dp"
+                android:layout_height="41dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_toEndOf="@+id/status5"
+                android:layout_marginStart="30dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/descriptionEditor4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="6dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="@string/description"
+                android:gravity="start"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
